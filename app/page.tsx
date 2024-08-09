@@ -1,34 +1,9 @@
 import { CourseComponent } from "@/components/CourseComponent";
+import { courses } from "@/lib/courses";
 import { Course } from "@/types/course";
 import Image from "next/image";
 
-const courses: Course[] = [
-  {
-    id: 1,
-    title: "Podstawy HTML",
-    description: "Nauka struktury stron internetowych.",
-  },
-  {
-    id: 2,
-    title: "Podstawy CSS",
-    description: "Stylowanie stron za pomocą CSS.",
-  },
-  {
-    id: 3,
-    title: "Podstawy JavaScript",
-    description: "Podstawy programowania w JS.",
-  },
-  {
-    id: 4,
-    title: "Wprowadzenie do React",
-    description: "Budowanie komponentów UI.",
-  },
-  {
-    id: 5,
-    title: "Wprowadzenie do Next.js",
-    description: "Serwer-side rendering z Next.js.",
-  },
-];
+
 
 
 export default function Home() {
