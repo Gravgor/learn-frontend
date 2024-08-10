@@ -9,6 +9,7 @@ export interface Lesson {
   language: string;
   tasks: string[];
   sources: string[];
+  editor: boolean;
 }
 
 

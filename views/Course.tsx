@@ -66,9 +66,12 @@ export default function Course({
                     </h4>
                     <p className="text-gray-600">{lesson.content}</p>
                   </div>
-                  <button className="text-pink-500 hover:text-pink-600">
+                  <Link
+                    className="mt-4 ml-4 bg-pink-400 text-white font-semibold py-2 px-4 h-10 rounded-full hover:bg-pink-500 transition-colors duration-300 ml-auto shadow-md hover:shadow-lg"
+                    href={`/course/${id}/lesson/${lesson.id}`}
+                  >
                     Przeczytaj
-                  </button>
+                  </Link>
                 </Link>
               </li>
             ))}

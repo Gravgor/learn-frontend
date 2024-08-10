@@ -5,86 +5,288 @@ import { createContext, useContext } from 'react';
 
 export const courses: Course[] = [
   {
-    id: 1,
-    title: 'Podstawy HTML',
-    description: 'Kurs wprowadzający do HTML, języka używanego do strukturyzowania treści na stronach internetowych. Nauczysz się, jak budować podstawową strukturę HTML, tworzyć różne elementy oraz jak używać atrybutów do dostosowywania wyglądu elementów.',
-    content: {
-      lessons: [
+    "id": 1,
+    "title": "Podstawy HTML",
+    "description": "Kurs wprowadzający do HTML, języka używanego do strukturyzowania treści na stronach internetowych. Nauczysz się, jak budować podstawową strukturę HTML, tworzyć różne elementy oraz jak używać atrybutów do dostosowywania wyglądu elementów.",
+    "content": {
+      "lessons": [
         {
-          id: 1,
-          title: 'Wprowadzenie do HTML',
-          language: 'haml',
-          content: 'HTML (HyperText Markup Language) to podstawowy język używany do tworzenia stron internetowych. Poznasz podstawowe elementy HTML, takie jak <html>, <head> i <body>, oraz sposób, w jaki tworzą one strukturę dokumentu.',
-          goal: 'Poznasz podstawy HTML i zrozumiesz, jak zbudować prostą stronę internetową.',
-          examples: [
-            '<html><head><title>Moja Strona</title></head><body><h1>Witaj Świecie!</h1></body></html>',
-            '<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Strona</title></head><body></body></html>'
+          "id": 1,
+          "title": "Wprowadzenie do HTML",
+          "language": "html",
+          "content": "HTML (HyperText Markup Language) to podstawowy język używany do tworzenia stron internetowych. Poznasz podstawowe elementy HTML, takie jak <html>, <head> i <body>, oraz sposób, w jaki tworzą one strukturę dokumentu.",
+          "goal": "Poznasz podstawy HTML i zrozumiesz, jak zbudować prostą stronę internetową.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Moja Strona</title>\n</head>\n<body>\n<h1>Witaj Świecie!</h1>\n</body>\n</html>"
           ],
-          tasks: [
-            'Utwórz prostą stronę HTML z nagłówkiem i akapitem.',
-            'Dodaj tytuł strony oraz kilka elementów takich jak listy i linki.'
+          "tasks": [
+            "Utwórz prostą stronę HTML z nagłówkiem i akapitem.",
+            "Dodaj tytuł strony oraz kilka elementów takich jak listy i linki."
           ],
-          sources: [
-            'https://developer.mozilla.org/pl/docs/Web/HTML',
-            'https://www.w3schools.com/html/'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML",
+            "https://www.w3schools.com/html/"
+          ],
+          "editor": true
         },
         {
-          id: 2,
-          title: 'Struktura dokumentu HTML',
-          language: 'haml',
-          content: 'Dowiesz się, jak zbudować poprawną strukturę dokumentu HTML, w tym znaczenie elementów <html>, <head> i <body>. Nauczysz się również o tagach nagłówkowych, akapitach i listach.',
-          goal: 'Zrozumiesz, jak struktura dokumentu HTML wpływa na renderowanie strony.',
-          examples: [
-            '<!DOCTYPE html>\n<html><head><title>Dokument HTML</title></head><body><h1>Witaj!</h1><p>To jest akapit.</p></body></html>'
+          "id": 2,
+          "title": "Struktura dokumentu HTML",
+          "language": "html",
+          "content": "Dowiesz się, jak zbudować poprawną strukturę dokumentu HTML, w tym znaczenie elementów <html>, <head> i <body>. Nauczysz się również o tagach nagłówkowych, akapitach i listach.",
+          "goal": "Zrozumiesz, jak struktura dokumentu HTML wpływa na renderowanie strony.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Dokument HTML</title>\n</head>\n<body>\n<h1>Witaj!</h1>\n<p>To jest akapit.</p>\n</body>\n</html>"
           ],
-          tasks: [
-            'Zbuduj stronę HTML, używając nagłówków, akapitów i list.',
-            'Spróbuj użyć różnych poziomów nagłówków (<h1>, <h2>, <h3>) i stylów.'
+          "tasks": [
+            "Zbuduj stronę HTML, używając nagłówków, akapitów i list.",
+            "Spróbuj użyć różnych poziomów nagłówków (<h1>, <h2>, <h3>) i stylów."
           ],
-          sources: [
-            'https://developer.mozilla.org/pl/docs/Web/HTML/Element/HTML',
-            'https://www.w3schools.com/html/html_elements.asp'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/HTML",
+            "https://www.w3schools.com/html/html_elements.asp"
+          ],
+          "editor": true
         },
         {
-          id: 3,
-          title: 'Semantyczne elementy HTML',
-          language: 'haml',
-          content: 'Poznasz semantyczne elementy HTML, które pomagają w organizacji i interpretacji treści. Dowiesz się o znaczeniu elementów takich jak <header>, <footer>, <article> i <section>.',
-          goal: 'Zrozumiesz, jak używać semantycznych elementów do tworzenia bardziej czytelnych i dostępnych dokumentów HTML.',
-          examples: [
-            '<header><h1>Moja Strona</h1></header><article><h2>Artykuł 1</h2><p>Treść artykułu.</p></article><footer><p>&copy; 2024 Moja Strona</p></footer>'
+          "id": 3,
+          "title": "Semantyczne elementy HTML",
+          "language": "html",
+          "content": "Poznasz semantyczne elementy HTML, które pomagają w organizacji i interpretacji treści. Dowiesz się o znaczeniu elementów takich jak <header>, <footer>, <article> i <section>.",
+          "goal": "Zrozumiesz, jak używać semantycznych elementów do tworzenia bardziej czytelnych i dostępnych dokumentów HTML.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Semantyczna Strona</title>\n</head>\n<body>\n<header>\n<h1>Moja Strona</h1>\n</header>\n<article>\n<h2>Artykuł 1</h2>\n<p>Treść artykułu.</p>\n</article>\n<footer>\n<p>&copy; 2024 Moja Strona</p>\n</footer>\n</body>\n</html>"
           ],
-          tasks: [
-            'Utwórz stronę HTML z użyciem elementów semantycznych.',
-            'Wykorzystaj <header>, <footer>, <article>, <section> do organizacji treści.'
+          "tasks": [
+            "Utwórz stronę HTML z użyciem elementów semantycznych.",
+            "Wykorzystaj <header>, <footer>, <article>, <section> do organizacji treści."
           ],
-          sources: [
-            'https://developer.mozilla.org/pl/docs/Web/HTML/Element',
-            'https://www.w3schools.com/html/html5_semantic_elements.asp'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element",
+            "https://www.w3schools.com/html/html5_semantic_elements.asp"
+          ],
+          "editor": true
         },
         {
-          id: 4,
-          title: 'Tworzenie formularzy HTML',
-          language: 'haml',
-          content: 'Nauczysz się, jak tworzyć formularze w HTML, które pozwalają na zbieranie danych od użytkowników. Poznasz różne typy pól formularzy, takie jak tekst, przyciski radiowe, pola wyboru oraz jak obsługiwać dane formularza.',
-          goal: 'Zrozumiesz, jak tworzyć formularze HTML i jak przetwarzać dane z formularzy.',
-          examples: [
-            '<form action="/submit" method="post"><label for="name">Imię:</label><input type="text" id="name" name="name"><input type="submit" value="Wyślij"></form>'
+          "id": 4,
+          "title": "Tworzenie formularzy HTML",
+          "language": "html",
+          "content": "Nauczysz się, jak tworzyć formularze w HTML, które pozwalają na zbieranie danych od użytkowników. Poznasz różne typy pól formularzy, takie jak tekst, przyciski radiowe, pola wyboru oraz jak obsługiwać dane formularza.",
+          "goal": "Zrozumiesz, jak tworzyć formularze HTML i jak przetwarzać dane z formularzy.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Formularz HTML</title>\n</head>\n<body>\n<form action=\"/submit\" method=\"post\">\n<label for=\"name\">Imię:</label>\n<input type=\"text\" id=\"name\" name=\"name\">\n<input type=\"submit\" value=\"Wyślij\">\n</form>\n</body>\n</html>"
           ],
-          tasks: [
-            'Stwórz formularz HTML z różnymi typami pól, takimi jak tekst, radio, checkbox.',
-            'Dodaj walidację formularza i obsługę danych po jego wysłaniu.'
+          "tasks": [
+            "Stwórz formularz HTML z różnymi typami pól, takimi jak tekst, radio, checkbox.",
+            "Dodaj walidację formularza i obsługę danych po jego wysłaniu."
           ],
-          sources: [
-            'https://developer.mozilla.org/pl/docs/Web/HTML/Element/form',
-            'https://www.w3schools.com/html/html_forms.asp'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/form",
+            "https://www.w3schools.com/html/html_forms.asp"
+          ],
+          "editor": true
         },
-      ],
-    },
+        {
+          "id": 5,
+          "title": "Osadzanie multimediów",
+          "language": "html",
+          "content": "Dowiesz się, jak osadzać multimedia, takie jak obrazy, wideo i audio w stronach HTML, oraz jak dostosować ich rozmiar i położenie.",
+          "goal": "Zrozumiesz, jak osadzać i kontrolować multimedia na stronach internetowych.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Multimedia</title>\n</head>\n<body>\n<h1>Moje Wideo</h1>\n<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  Twoja przeglądarka nie wspiera wideo HTML5.\n</video>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Osadź obraz, wideo i plik audio na stronie HTML.",
+            "Dodaj atrybuty takie jak rozmiar i kontrolki do multimediów."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/video",
+            "https://www.w3schools.com/html/html_images.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 6,
+          "title": "Tworzenie linków i nawigacji",
+          "language": "html",
+          "content": "Nauczysz się, jak tworzyć linki na stronach HTML, jak używać kotwic, a także jak tworzyć menu nawigacyjne i breadcrumbs.",
+          "goal": "Zrozumiesz, jak budować skuteczne nawigacje i tworzyć linki na stronach internetowych.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Linki i Nawigacja</title>\n</head>\n<body>\n<nav>\n  <a href=\"index.html\">Strona Główna</a> |\n  <a href=\"about.html\">O Nas</a> |\n  <a href=\"contact.html\">Kontakt</a>\n</nav>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Stwórz menu nawigacyjne z linkami do różnych sekcji strony.",
+            "Użyj kotwic do nawigacji w obrębie jednej strony."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/a",
+            "https://www.w3schools.com/html/html_links.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 7,
+          "title": "Tworzenie tabel w HTML",
+          "language": "html",
+          "content": "Dowiesz się, jak tworzyć tabele w HTML, jak organizować dane w wierszach i kolumnach oraz jak dostosowywać ich wygląd za pomocą atrybutów i stylów CSS.",
+          "goal": "Zrozumiesz, jak tworzyć i stylizować tabele w HTML.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Tabela HTML</title>\n</head>\n<body>\n<table border=\"1\">\n  <tr>\n    <th>Imię</th>\n    <th>Nazwisko</th>\n  </tr>\n  <tr>\n    <td>Jan</td>\n    <td>Kowalski</td>\n  </tr>\n</table>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Stwórz tabelę HTML z kilkoma wierszami i kolumnami.",
+            "Dodaj nagłówki i dostosuj styl tabeli."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/table",
+            "https://www.w3schools.com/html/html_tables.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 8,
+          "title": "Optymalizacja stron HTML",
+          "language": "html",
+          "content": "Nauczysz się, jak optymalizować strony HTML pod kątem szybkości ładowania, SEO (Search Engine Optimization) oraz dostępności dla osób z niepełnosprawnościami.",
+          "goal": "Zrozumiesz, jak tworzyć strony HTML, które są szybkie, łatwe do znalezienia i dostępne dla wszystkich użytkowników.",
+          "examples": [
+            "<!DOCTYPE html>\n<html lang=\"pl\">\n<head>\n<meta charset=\"UTF-8\">\n<title>Optymalizacja Stron</title>\n<meta name=\"description\" content=\"Nauka optymalizacji stron HTML.\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n</head>\n<body>\n<h1>Optymalizacja HTML</h1>\n<p>To jest przykład strony zoptymalizowanej pod kątem SEO i dostępności.</p>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Dodaj odpowiednie metatagi do strony HTML.",
+            "Zoptymalizuj obrazy i inne zasoby na stronie, aby przyspieszyć jej ładowanie."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/meta",
+            "https://www.w3schools.com/html/html_responsive.asp"
+          ],
+          "editor": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "title": "Zaawansowany HTML",
+    "description": "Kurs skierowany do osób, które opanowały podstawy HTML i chcą pogłębić swoją wiedzę o bardziej zaawansowane techniki i funkcje HTML5. Nauczysz się zarządzać formularzami, pracować z lokalnymi zasobami, wykorzystać Web Storage, a także stosować zaawansowane techniki dostosowywania stron.",
+    "content": {
+      "lessons": [
+        {
+          "id": 1,
+          "title": "Zaawansowane formularze HTML",
+          "language": "html",
+          "content": "W tej lekcji poznasz zaawansowane techniki pracy z formularzami HTML, takie jak używanie pól daty, walidacja po stronie klienta, oraz przesyłanie plików.",
+          "goal": "Zrozumiesz, jak tworzyć bardziej złożone formularze HTML, które spełniają zaawansowane wymagania.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Zaawansowane Formularze</title>\n</head>\n<body>\n<form action=\"/submit\" method=\"post\" enctype=\"multipart/form-data\">\n  <label for=\"date\">Wybierz datę:</label>\n  <input type=\"date\" id=\"date\" name=\"date\">\n  <br>\n  <label for=\"file\">Wybierz plik:</label>\n  <input type=\"file\" id=\"file\" name=\"file\">\n  <br>\n  <input type=\"submit\" value=\"Wyślij\">\n</form>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Stwórz formularz HTML, który zawiera pola daty, walidację po stronie klienta, oraz obsługę przesyłania plików.",
+            "Przetestuj różne typy pól formularza, takie jak `range`, `color`, `email`, `number`."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/input",
+            "https://www.w3schools.com/html/html_form_elements.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 2,
+          "title": "Praca z lokalnymi zasobami (Local Storage, Session Storage)",
+          "language": "javascript",
+          "content": "Dowiesz się, jak używać Local Storage i Session Storage do przechowywania danych na urządzeniu użytkownika oraz jak zarządzać tymi danymi za pomocą JavaScript.",
+          "goal": "Zrozumiesz, jak przechowywać i zarządzać danymi lokalnymi w przeglądarce.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Local Storage</title>\n</head>\n<body>\n<p id=\"output\"></p>\n<script>\n  localStorage.setItem('name', 'Jan Kowalski');\n  document.getElementById('output').textContent = 'Witaj, ' + localStorage.getItem('name');\n</script>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Stwórz prostą aplikację, która zapisuje i odczytuje dane z Local Storage.",
+            "Zaimplementuj funkcje do przechowywania danych użytkownika, takich jak imię i preferencje, w Local Storage lub Session Storage."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/API/Window/localStorage",
+            "https://www.w3schools.com/jsref/prop_win_localstorage.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 3,
+          "title": "Osadzanie i zarządzanie zewnętrznymi zasobami",
+          "language": "html",
+          "content": "Nauczysz się, jak efektywnie osadzać zewnętrzne zasoby, takie jak pliki CSS, JavaScript, obrazy i inne zasoby multimedialne, a także jak zarządzać ich ładowaniem i wydajnością.",
+          "goal": "Zrozumiesz, jak optymalizować strony internetowe poprzez zarządzanie zewnętrznymi zasobami.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Zewnętrzne Zasoby</title>\n<link rel=\"stylesheet\" href=\"styles.css\">\n<script src=\"script.js\" defer></script>\n</head>\n<body>\n<h1>Strona z Zewnętrznymi Zasobami</h1>\n<img src=\"image.jpg\" alt=\"Przykładowy obraz\">\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Osadź zewnętrzny plik CSS i JavaScript na stronie HTML.",
+            "Zoptymalizuj ładowanie zasobów, korzystając z atrybutów `async` i `defer` dla skryptów oraz `preload` dla zasobów multimedialnych."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/link",
+            "https://www.w3schools.com/tags/att_script_defer.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 4,
+          "title": "Canvas i grafika w HTML5",
+          "language": "html",
+          "content": "Wprowadzenie do użycia elementu `<canvas>` w HTML5, który pozwala na dynamiczne tworzenie grafiki, animacji oraz zaawansowanych efektów wizualnych na stronach internetowych.",
+          "goal": "Zrozumiesz, jak korzystać z `<canvas>` do tworzenia grafiki i animacji za pomocą JavaScript.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Canvas w HTML5</title>\n</head>\n<body>\n<canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>\n<script>\n  var c = document.getElementById('myCanvas');\n  var ctx = c.getContext('2d');\n  ctx.fillStyle = '#FF0000';\n  ctx.fillRect(0, 0, 150, 75);\n</script>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Stwórz prostą grafikę na elemencie `<canvas>`.",
+            "Zaimplementuj animację, która zmienia kolor i położenie prostokąta na canvas."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/HTML/Element/canvas",
+            "https://www.w3schools.com/html/html5_canvas.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 5,
+          "title": "Web Workers - równoległe przetwarzanie w HTML5",
+          "language": "javascript",
+          "content": "Poznasz Web Workers, które pozwalają na wykonywanie skryptów w tle, co zwiększa wydajność aplikacji webowych poprzez równoległe przetwarzanie.",
+          "goal": "Zrozumiesz, jak korzystać z Web Workers do poprawy wydajności aplikacji internetowych.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>Web Workers</title>\n</head>\n<body>\n<script>\n  var worker = new Worker('worker.js');\n  worker.onmessage = function(event) {\n    console.log('Wynik z Web Worker: ' + event.data);\n  };\n  worker.postMessage('start');\n</script>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Stwórz prosty Web Worker, który wykonuje obliczenia w tle.",
+            "Zaimplementuj komunikację między stroną główną a Web Workerem."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/API/Web_Workers_API/Using_web_workers",
+            "https://www.w3schools.com/html/html5_webworkers.asp"
+          ],
+          "editor": true
+        },
+        {
+          "id": 6,
+          "title": "API Geolokacji",
+          "language": "javascript",
+          "content": "Dowiesz się, jak używać API Geolokacji do uzyskiwania lokalizacji użytkownika w czasie rzeczywistym i jak wykorzystać te dane w aplikacjach webowych.",
+          "goal": "Zrozumiesz, jak uzyskać i wykorzystać dane o lokalizacji użytkownika.",
+          "examples": [
+            "<!DOCTYPE html>\n<html>\n<head>\n<title>API Geolokacji</title>\n</head>\n<body>\n<p id=\"demo\">Kliknij przycisk, aby uzyskać Twoją lokalizację:</p>\n<button onclick=\"getLocation()\">Pokaż lokalizację</button>\n<p id=\"output\"></p>\n<script>\nfunction getLocation() {\n  if (navigator.geolocation) {\n    navigator.geolocation.getCurrentPosition(showPosition);\n  } else {\n    document.getElementById('output').textContent = 'Geolokacja nie jest wspierana przez tę przeglądarkę.';\n  }\n}\nfunction showPosition(position) {\n  document.getElementById('output').textContent = 'Szerokość: ' + position.coords.latitude + ', Długość: ' + position.coords.longitude;\n}\n</script>\n</body>\n</html>"
+          ],
+          "tasks": [
+            "Stwórz stronę, która wykorzystuje API Geolokacji do uzyskania lokalizacji użytkownika.",
+            "Wyświetl lokalizację użytkownika na mapie przy użyciu danych z API."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/API/Geolocation_API",
+            "https://www.w3schools.com/html/html5_geolocation.asp"
+          ],
+          "editor": true
+        }
+      ]
+    }
   },
   {
     id: 2,
@@ -109,7 +311,8 @@ export const courses: Course[] = [
           sources: [
             'https://developer.mozilla.org/pl/docs/Web/CSS',
             'https://www.w3schools.com/css/'
-          ]
+          ],
+          editor: false
         },
         {
           id: 2,
@@ -129,7 +332,8 @@ export const courses: Course[] = [
           sources: [
             'https://developer.mozilla.org/pl/docs/Web/CSS/Selector',
             'https://www.w3schools.com/css/css_selectors.asp'
-          ]
+          ],
+          editor: false
         },
         {
           id: 3,
@@ -149,7 +353,8 @@ export const courses: Course[] = [
             'https://developer.mozilla.org/pl/docs/Web/CSS/CSS_Box_Model',
             'https://css-tricks.com/snippets/css/complete-guide-grid/',
             'https://css-tricks.com/snippets/css/a-guide-to-flexbox/'
-          ]
+          ],
+          editor: false
         },
         {
           id: 4,
@@ -168,7 +373,8 @@ export const courses: Course[] = [
           sources: [
             'https://developer.mozilla.org/pl/docs/Web/CSS/Media_Queries/Using_media_queries',
             'https://www.w3schools.com/css/css_rwd_mediaqueries.asp'
-          ]
+          ],
+          editor: false
         },
       ],
     },
@@ -196,7 +402,8 @@ export const courses: Course[] = [
           sources: [
             'https://developer.mozilla.org/pl/docs/Web/JavaScript',
             'https://www.w3schools.com/js/'
-          ]
+          ],
+          editor: true
         },
         {
           id: 2,
@@ -214,7 +421,8 @@ export const courses: Course[] = [
           sources: [
             'https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Grammar_and_types',
             'https://www.w3schools.com/js/js_datatypes.asp'
-          ]
+          ],
+          editor: true
         },
         {
           id: 3,
@@ -233,7 +441,8 @@ export const courses: Course[] = [
           sources: [
             'https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Functions',
             'https://www.w3schools.com/js/js_functions.asp'
-          ]
+          ],
+          editor: true
         },
         {
           id: 4,
@@ -252,176 +461,222 @@ export const courses: Course[] = [
           sources: [
             'https://developer.mozilla.org/pl/docs/Web/API/Document_Object_Model',
             'https://www.w3schools.com/js/js_htmldom.asp'
-          ]
+          ],
+          editor: true
         },
       ],
     },
   },
   {
-    id: 4,
-    title: 'Wprowadzenie do React',
-    description: 'Kurs wprowadzający do React, popularnej biblioteki JavaScript do budowania interfejsów użytkownika. Nauczysz się, jak tworzyć komponenty, zarządzać stanem aplikacji oraz jak używać różnych funkcji Reacta do budowania dynamicznych aplikacji webowych.',
-    content: {
-      lessons: [
+    "id": 4,
+    "title": "Zaawansowany JavaScript",
+    "description": "Kurs zaawansowanego JavaScript, który obejmuje bardziej złożone zagadnienia, takie jak obiekty, klasy, dziedziczenie, moduły i optymalizacja wydajności. Nauczysz się, jak tworzyć bardziej złożone i zoptymalizowane aplikacje webowe.",
+    "content": {
+      "lessons": [
         {
-          id: 1,
-          title: 'Wprowadzenie do React',
-          language: 'JavaScript',
-          content: 'React to biblioteka JavaScript, która umożliwia budowanie dynamicznych i interaktywnych interfejsów użytkownika. Poznasz podstawowe pojęcia takie jak komponenty, propsy i stan.',
-          goal: 'Zrozumiesz podstawowe pojęcia Reacta oraz jak używać komponentów do budowy UI.',
-          examples: [
-            'import React from "react";\nfunction App() {\n  return <h1>Hello, React!</h1>;\n}\nexport default App;'
+          "id": 1,
+          "title": "Obiekty i klasy w JavaScript",
+          "language": "JavaScript",
+          "content": "Poznasz podstawy programowania obiektowego w JavaScript, w tym jak definiować obiekty, tworzyć klasy i implementować dziedziczenie.",
+          "goal": "Zrozumiesz, jak pracować z obiektami i klasami w JavaScript oraz jak stosować dziedziczenie do organizacji kodu.",
+          "examples": [
+            "class Person {\n  constructor(name) {\n    this.name = name;\n  }\n  greet() {\n    return `Hello, my name is ${this.name}!`;\n  }\n}\n\nconst john = new Person('John');\nconsole.log(john.greet());"
           ],
-          tasks: [
-            'Stwórz prosty komponent React, który wyświetla komunikat powitalny.',
-            'Dodaj do komponentu propsy i przekaż dane do renderowania.'
+          "tasks": [
+            "Zdefiniuj klasę i stwórz obiekt tej klasy.",
+            "Dodaj metodę do klasy i wywołaj ją na obiekcie."
           ],
-          sources: [
-            'https://reactjs.org/docs/getting-started.html',
-            'https://www.w3schools.com/react/'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Classes",
+            "https://www.w3schools.com/js/js_object_definition.asp"
+          ],
+          "editor": true
         },
         {
-          id: 2,
-          title: 'Komponenty w React',
-          language: 'JavaScript',
-          content: 'Dowiesz się, jak tworzyć komponenty w React i jak je wykorzystywać do budowania aplikacji. Nauczysz się o różnicy między komponentami klasowymi a funkcyjnymi oraz o używaniu hooków.',
-          goal: 'Zrozumiesz, jak tworzyć komponenty klasowe i funkcyjne, oraz jak używać hooków do zarządzania stanem.',
-          examples: [
-            'const FunctionalComponent = () => <div>Hello from Functional Component</div>;',
-            'class ClassComponent extends React.Component {\n  render() {\n    return <div>Hello from Class Component</div>;\n  }\n}'
+          "id": 2,
+          "title": "Moduły w JavaScript",
+          "language": "JavaScript",
+          "content": "Nauczysz się, jak organizować kod za pomocą modułów w JavaScript. Dowiesz się, jak eksportować i importować funkcje, obiekty i klasy między plikami.",
+          "goal": "Zrozumiesz, jak korzystać z modułów do lepszej organizacji i zarządzania kodem w dużych aplikacjach.",
+          "examples": [
+            "// math.js\nexport function add(a, b) {\n  return a + b;\n}\n\n// app.js\nimport { add } from './math.js';\nconsole.log(add(2, 3));"
           ],
-          tasks: [
-            'Napisz komponent klasowy oraz komponent funkcyjny.',
-            'Użyj hooka useState w komponencie funkcyjnym.'
+          "tasks": [
+            "Stwórz moduł i zaimportuj funkcję z tego modułu w innym pliku.",
+            "Podziel aplikację na moduły i zarządzaj importami i eksportami."
           ],
-          sources: [
-            'https://reactjs.org/docs/components-and-props.html',
-            'https://reactjs.org/docs/hooks-intro.html'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Modules",
+            "https://www.w3schools.com/js/js_modules.asp"
+          ],
+          "editor": true
         },
         {
-          id: 3,
-          title: 'Zarządzanie Stanem w React',
-          language: 'JavaScript',
-          content: 'Nauczysz się, jak zarządzać stanem aplikacji w React. Dowiesz się, jak używać hooka useState oraz kontekstu do przechowywania i zarządzania danymi w aplikacji.',
-          goal: 'Zrozumiesz, jak zarządzać stanem w React oraz jak używać useState i Context API.',
-          examples: [
-            'const [count, setCount] = useState(0);\n<button onClick={() => setCount(count + 1)}>Increment</button>'
+          "id": 3,
+          "title": "Optymalizacja wydajności w JavaScript",
+          "language": "JavaScript",
+          "content": "Dowiesz się, jak optymalizować kod JavaScript pod kątem wydajności. Poznasz techniki takie jak debouncing, throttling oraz optymalizacja pętli.",
+          "goal": "Zrozumiesz, jak optymalizować kod JavaScript, aby poprawić wydajność aplikacji.",
+          "examples": [
+            "function debounce(func, delay) {\n  let timeout;\n  return function(...args) {\n    clearTimeout(timeout);\n    timeout = setTimeout(() => func.apply(this, args), delay);\n  };\n}"
           ],
-          tasks: [
-            'Stwórz komponent, który zarządza licznikiem za pomocą hooka useState.',
-            'Użyj Context API do zarządzania stanem w aplikacji.'
+          "tasks": [
+            "Zastosuj technikę debouncing do funkcji obsługującej zdarzenie.",
+            "Optymalizuj pętlę w kodzie JavaScript."
           ],
-          sources: [
-            'https://reactjs.org/docs/hooks-state.html',
-            'https://reactjs.org/docs/context.html'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Performance",
+            "https://www.w3schools.com/js/js_performance.asp"
+          ],
+          "editor": true
         },
         {
-          id: 4,
-          title: 'Routing w React',
-          language: 'JavaScript',
-          content: 'Poznasz techniki routingu w React, które pozwalają na tworzenie aplikacji z wieloma stronami. Nauczysz się, jak używać biblioteki React Router do definiowania tras i przełączania się między nimi.',
-          goal: 'Zrozumiesz, jak implementować routing w aplikacji React oraz jak używać React Router do zarządzania trasami.',
-          examples: [
-            'import { BrowserRouter as Router, Route, Switch } from "react-router-dom";\n\n<Router>\n  <Switch>\n    <Route path="/" exact component={Home} />\n    <Route path="/about" component={About} />\n  </Switch>\n</Router>'
+          "id": 4,
+          "title": "Asynchroniczność w JavaScript",
+          "language": "JavaScript",
+          "content": "Poznasz różne mechanizmy asynchroniczności w JavaScript, takie jak promisy, async/await i obsługa błędów w asynchronicznych funkcjach.",
+          "goal": "Zrozumiesz, jak pracować z asynchronicznymi operacjami w JavaScript oraz jak skutecznie obsługiwać błędy.",
+          "examples": [
+            "const fetchData = async () => {\n  try {\n    let response = await fetch('https://api.example.com/data');\n    let data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error('Error fetching data:', error);\n  }\n};\n\nfetchData();"
           ],
-          tasks: [
-            'Stwórz aplikację React z kilkoma stronami, używając React Router.',
-            'Dodaj nawigację między stronami za pomocą linków.'
+          "tasks": [
+            "Zaimplementuj funkcję asynchroniczną z użyciem async/await do pobierania danych z API.",
+            "Obsłuż błędy w funkcji asynchronicznej i wyświetl komunikat o błędzie."
           ],
-          sources: [
-            'https://reactrouter.com/',
-            'https://reactjs.org/docs/react-router.html'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Using_promises",
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Operators/await"
+          ],
+          "editor": true
         },
-      ],
-    },
+        {
+          "id": 5,
+          "title": "Zarządzanie pamięcią i GC w JavaScript",
+          "language": "JavaScript",
+          "content": "Dowiesz się, jak JavaScript zarządza pamięcią i jakie są mechanizmy garbage collection (GC). Poznasz techniki zapobiegające wyciekom pamięci.",
+          "goal": "Zrozumiesz, jak zarządzać pamięcią w aplikacjach JavaScript oraz jak unikać problemów związanych z wyciekami pamięci.",
+          "examples": [
+            "let largeArray = new Array(1000000).fill('data');\nlargeArray = null; // Ustawienie referencji na null, aby umożliwić GC usunięcie obiektu"
+          ],
+          "tasks": [
+            "Zbadaj, jak aplikacja zarządza pamięcią i identyfikuj potencjalne wycieki pamięci.",
+            "Zastosuj techniki zarządzania pamięcią, aby poprawić wydajność aplikacji."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Memory_Management",
+            "https://www.w3schools.com/js/js_memory.asp"
+          ],
+          "editor": true
+        }
+      ]
+    }
   },
   {
-    id: 5,
-    title: 'Wprowadzenie do Next.js',
-    description: 'Kurs wprowadzający do Next.js, frameworka dla Reacta, który umożliwia renderowanie po stronie serwera oraz generowanie stron statycznych. Nauczysz się, jak korzystać z Next.js do budowania wydajnych i skalowalnych aplikacji webowych.',
-    content: {
-      lessons: [
+    "id": 6,
+    "title": "Dodatkowe funkcje JavaScript",
+    "description": "Kurs dotyczący zaawansowanych, ale często przydatnych funkcji JavaScript, które mogą pomóc w codziennym programowaniu. Zawiera tematy takie jak regular expressions, data i czas, programowanie funkcyjne, oraz Web APIs.",
+    "content": {
+      "lessons": [
         {
-          id: 1,
-          title: 'Wprowadzenie do Next.js',
-          language: 'JavaScript',
-          content: 'Next.js to framework oparty na React, który oferuje funkcje takie jak renderowanie po stronie serwera i generowanie stron statycznych. Poznasz podstawowe cechy Next.js oraz jak rozpocząć pracę z tym frameworkiem.',
-          goal: 'Zrozumiesz podstawowe funkcje Next.js oraz jak skonfigurować i uruchomić projekt Next.js.',
-          examples: [
-            'npx create-next-app my-next-app',
-            'import React from "react";\nfunction Home() {\n  return <h1>Witaj w Next.js!</h1>;\n}\nexport default Home;'
+          "id": 1,
+          "title": "Regular Expressions w JavaScript",
+          "language": "JavaScript",
+          "content": "Poznasz, jak tworzyć i używać wyrażeń regularnych w JavaScript do wyszukiwania, dopasowywania i manipulowania tekstem.",
+          "goal": "Zrozumiesz, jak używać regular expressions w JavaScript do skomplikowanych operacji na tekstach.",
+          "examples": [
+            "const regex = /\\b\\w{4,}\\b/g;\nconst text = 'JavaScript is great!';\nconsole.log(text.match(regex));"
           ],
-          tasks: [
-            'Stwórz nowy projekt Next.js i uruchom go lokalnie.',
-            'Dodaj prostą stronę startową do aplikacji Next.js.'
+          "tasks": [
+            "Stwórz wyrażenie regularne do wyszukiwania określonego wzorca w ciągu tekstowym.",
+            "Zastosuj wyrażenie regularne do walidacji adresu email."
           ],
-          sources: [
-            'https://nextjs.org/docs',
-            'https://www.w3schools.com/whatis/whatis_nextjs.asp'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Regular_Expressions",
+            "https://www.w3schools.com/js/js_regexp.asp"
+          ],
+          "editor": true
         },
         {
-          id: 2,
-          title: 'Routing w Next.js',
-          language: 'JavaScript',
-          content: 'Dowiesz się, jak działa routing w Next.js. Poznasz sposób, w jaki Next.js obsługuje routing oparty na plikach oraz jak dynamicznie generować trasy.',
-          goal: 'Zrozumiesz, jak korzystać z systemu routingu w Next.js do tworzenia dynamicznych stron.',
-          examples: [
-            'pages/index.js\n\nfunction Home() {\n  return <h1>Strona Główna</h1>;\n}\nexport default Home;',
-            'pages/about.js\n\nfunction About() {\n  return <h1>O Nas</h1>;\n}\nexport default About;'
+          "id": 2,
+          "title": "Praca z datami i czasem",
+          "language": "JavaScript",
+          "content": "Dowiesz się, jak pracować z datami i czasem w JavaScript, jak formatować daty, porównywać je i wykonywać operacje na czasie.",
+          "goal": "Zrozumiesz, jak zarządzać datami i czasem w aplikacjach JavaScript.",
+          "examples": [
+            "const now = new Date();\nconsole.log(now.toLocaleDateString());\nconst futureDate = new Date(2025, 0, 1);\nconsole.log(futureDate - now);"
           ],
-          tasks: [
-            'Stwórz kilka stron w aplikacji Next.js i skonfiguruj nawigację między nimi.',
-            'Dodaj dynamiczne trasy do aplikacji Next.js.'
+          "tasks": [
+            "Stwórz skrypt, który wyświetla aktualną datę i czas w różnych formatach.",
+            "Zaimplementuj funkcję liczącą dni między dwiema datami."
           ],
-          sources: [
-            'https://nextjs.org/docs/routing/pages',
-            'https://nextjs.org/docs/api-reference/next.config.js/introduction'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Global_Objects/Date",
+            "https://www.w3schools.com/js/js_dates.asp"
+          ],
+          "editor": true
         },
         {
-          id: 3,
-          title: 'Rendering po stronie serwera (SSR)',
-          language: 'JavaScript',
-          content: 'Nauczysz się, jak Next.js obsługuje renderowanie po stronie serwera. Dowiesz się, jak korzystać z funkcji getServerSideProps do pobierania danych na serwerze przed renderowaniem strony.',
-          goal: 'Zrozumiesz, jak wykorzystać SSR w Next.js do renderowania stron z danymi pobranymi na serwerze.',
-          examples: [
-            'export async function getServerSideProps() {\n  const res = await fetch("https://api.example.com/data");\n  const data = await res.json();\n  return { props: { data } }; \n}\nfunction Page({ data }) {\n  return <div>{data.title}</div>;\n}\nexport default Page;'
+          "id": 3,
+          "title": "Programowanie funkcyjne w JavaScript",
+          "language": "JavaScript",
+          "content": "Poznasz zasady programowania funkcyjnego, takie jak map, filter, reduce, oraz jak stosować te techniki w JavaScript.",
+          "goal": "Zrozumiesz, jak używać funkcji wyższego rzędu do manipulacji danymi i tworzenia bardziej deklaratywnego kodu.",
+          "examples": [
+            "const numbers = [1, 2, 3, 4, 5];\nconst doubled = numbers.map(n => n * 2);\nconsole.log(doubled);"
           ],
-          tasks: [
-            'Dodaj funkcję getServerSideProps do jednej ze stron w aplikacji Next.js.',
-            'Pobierz dane z API i wyświetl je na stronie.'
+          "tasks": [
+            "Użyj metody map do przekształcenia tablicy.",
+            "Zaimplementuj operacje filter i reduce na tablicy."
           ],
-          sources: [
-            'https://nextjs.org/docs/app/building-your-application/data-fetching/get-server-side-props',
-            'https://nextjs.org/docs/api-reference/data-fetching/getServerSideProps'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Functions",
+            "https://www.w3schools.com/js/js_function_closures.asp"
+          ],
+          "editor": true
         },
         {
-          id: 4,
-          title: 'Generowanie stron statycznych (SSG)',
-          language: 'JavaScript',
-          content: 'Dowiesz się, jak Next.js generuje strony statyczne podczas budowy aplikacji. Poznasz funkcję getStaticProps i jak używać jej do generowania stron na podstawie danych podczas budowania aplikacji.',
-          goal: 'Zrozumiesz, jak używać SSG w Next.js do generowania stron statycznych, które są pre-renderowane podczas budowy aplikacji.',
-          examples: [
-            'export async function getStaticProps() {\n  const res = await fetch("https://api.example.com/data");\n  const data = await res.json();\n  return { props: { data } }; \n}\nfunction Page({ data }) {\n  return <div>{data.title}</div>;\n}\nexport default Page;'
+          "id": 4,
+          "title": "Obsługa błędów i debugging w JavaScript",
+          "language": "JavaScript",
+          "content": "Nauczysz się, jak skutecznie obsługiwać błędy w JavaScript za pomocą try...catch oraz jak debugować kod przy użyciu narzędzi przeglądarki.",
+          "goal": "Zrozumiesz, jak poprawnie obsługiwać błędy i debugować kod JavaScript.",
+          "examples": [
+            "try {\n  let result = riskyFunction();\n} catch (error) {\n  console.error('An error occurred:', error);\n}"
           ],
-          tasks: [
-            'Użyj funkcji getStaticProps do generowania stron statycznych w aplikacji Next.js.',
-            'Zbadaj różnice między SSR i SSG i wybierz odpowiednią metodę do różnych scenariuszy.'
+          "tasks": [
+            "Zaimplementuj blok try...catch do obsługi błędów w funkcji.",
+            "Użyj narzędzi do debugowania przeglądarki, aby znaleźć i naprawić błąd w kodzie."
           ],
-          sources: [
-            'https://nextjs.org/docs/app/building-your-application/data-fetching/get-static-props',
-            'https://nextjs.org/docs/api-reference/data-fetching/getStaticProps'
-          ]
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/JavaScript/Reference/Statements/try...catch",
+            "https://www.w3schools.com/js/js_debugging.asp"
+          ],
+          "editor": true
         },
-      ],
-    },
-  },
+        {
+          "id": 5,
+          "title": "Web APIs w JavaScript",
+          "language": "JavaScript",
+          "content": "Dowiesz się, jak korzystać z różnych Web APIs dostępnych w przeglądarce, takich jak Geolocation API, Fetch API, oraz LocalStorage.",
+          "goal": "Zrozumiesz, jak korzystać z Web APIs do tworzenia bardziej interaktywnych i dynamicznych aplikacji webowych.",
+          "examples": [
+            "navigator.geolocation.getCurrentPosition(position => {\n  console.log('Latitude:', position.coords.latitude);\n  console.log('Longitude:', position.coords.longitude);\n});"
+          ],
+          "tasks": [
+            "Zaimplementuj skrypt, który pobiera i wyświetla bieżącą lokalizację użytkownika.",
+            "Stwórz funkcję, która zapisuje dane użytkownika w LocalStorage i odczytuje je po ponownym załadowaniu strony."
+          ],
+          "sources": [
+            "https://developer.mozilla.org/pl/docs/Web/API/Geolocation_API",
+            "https://www.w3schools.com/js/js_api_intro.asp"
+          ],
+          "editor": true
+        }
+      ]
+    }
+  }
+  
+  
 ];
 
 
