@@ -6,9 +6,12 @@ export interface Lesson {
   content: string;
   goal: string;
   examples: string[];
+  language: string;
   tasks: string[];
   sources: string[];
 }
+
+
 
 export interface Course {
   id: number;

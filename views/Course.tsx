@@ -58,7 +58,7 @@ export default function Course({
               >
                 <Link
                   className="flex items-start justify-between text-gray-700 hover:text-pink-500"
-                  href={`/course/${id}/lesson/${lesson.title}`}
+                  href={`/course/${id}/lesson/${lesson.id}`}
                 >
                   <div>
                     <h4 className="text-lg font-semibold text-pink-600">

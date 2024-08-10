@@ -13,6 +13,7 @@ export const courses: Course[] = [
         {
           id: 1,
           title: 'Wprowadzenie do HTML',
+          language: 'haml',
           content: 'HTML (HyperText Markup Language) to podstawowy język używany do tworzenia stron internetowych. Poznasz podstawowe elementy HTML, takie jak <html>, <head> i <body>, oraz sposób, w jaki tworzą one strukturę dokumentu.',
           goal: 'Poznasz podstawy HTML i zrozumiesz, jak zbudować prostą stronę internetową.',
           examples: [
@@ -31,10 +32,11 @@ export const courses: Course[] = [
         {
           id: 2,
           title: 'Struktura dokumentu HTML',
+          language: 'haml',
           content: 'Dowiesz się, jak zbudować poprawną strukturę dokumentu HTML, w tym znaczenie elementów <html>, <head> i <body>. Nauczysz się również o tagach nagłówkowych, akapitach i listach.',
           goal: 'Zrozumiesz, jak struktura dokumentu HTML wpływa na renderowanie strony.',
           examples: [
-            '<!DOCTYPE html><html><head><title>Dokument HTML</title></head><body><h1>Witaj!</h1><p>To jest akapit.</p></body></html>'
+            '<!DOCTYPE html>\n<html><head><title>Dokument HTML</title></head><body><h1>Witaj!</h1><p>To jest akapit.</p></body></html>'
           ],
           tasks: [
             'Zbuduj stronę HTML, używając nagłówków, akapitów i list.',
@@ -48,6 +50,7 @@ export const courses: Course[] = [
         {
           id: 3,
           title: 'Semantyczne elementy HTML',
+          language: 'haml',
           content: 'Poznasz semantyczne elementy HTML, które pomagają w organizacji i interpretacji treści. Dowiesz się o znaczeniu elementów takich jak <header>, <footer>, <article> i <section>.',
           goal: 'Zrozumiesz, jak używać semantycznych elementów do tworzenia bardziej czytelnych i dostępnych dokumentów HTML.',
           examples: [
@@ -65,6 +68,7 @@ export const courses: Course[] = [
         {
           id: 4,
           title: 'Tworzenie formularzy HTML',
+          language: 'haml',
           content: 'Nauczysz się, jak tworzyć formularze w HTML, które pozwalają na zbieranie danych od użytkowników. Poznasz różne typy pól formularzy, takie jak tekst, przyciski radiowe, pola wyboru oraz jak obsługiwać dane formularza.',
           goal: 'Zrozumiesz, jak tworzyć formularze HTML i jak przetwarzać dane z formularzy.',
           examples: [
@@ -91,6 +95,7 @@ export const courses: Course[] = [
         {
           id: 1,
           title: 'Wprowadzenie do CSS',
+          language: 'CSS',
           content: 'CSS (Cascading Style Sheets) jest językiem służącym do stylizacji stron internetowych. Nauczysz się, jak stosować style do elementów HTML, jak używać selektorów i właściwości oraz jak tworzyć podstawowe reguły stylów.',
           goal: 'Zrozumiesz, jak używać CSS do stylizacji elementów HTML oraz jak pisać podstawowe reguły CSS.',
           examples: [
@@ -109,6 +114,7 @@ export const courses: Course[] = [
         {
           id: 2,
           title: 'Selektory CSS',
+          language: 'CSS',
           content: 'Poznasz różne typy selektorów CSS, które umożliwiają stylizowanie elementów na podstawie ich typu, klasy, identyfikatora oraz innych atrybutów. Dowiesz się również o selektorach złożonych i pseudoklasach.',
           goal: 'Zrozumiesz, jak używać różnych selektorów CSS do precyzyjnego stylizowania elementów HTML.',
           examples: [
@@ -128,6 +134,7 @@ export const courses: Course[] = [
         {
           id: 3,
           title: 'Box Model i Layout',
+          language: 'CSS',
           content: 'Dowiesz się o modelu pudełkowym CSS, który opisuje, jak elementy HTML są renderowane i jak można kontrolować ich wymiary, marginesy, padding oraz obramowanie. Nauczysz się również o różnych technikach układu, takich jak flexbox i grid.',
           goal: 'Zrozumiesz, jak działa model pudełkowy CSS i jak wykorzystać techniki layoutu, takie jak flexbox i grid.',
           examples: [
@@ -147,6 +154,7 @@ export const courses: Course[] = [
         {
           id: 4,
           title: 'Media Queries i Responsywność',
+          language: 'CSS',
           content: 'Nauczysz się, jak używać zapytań medialnych (media queries) do tworzenia responsywnych projektów, które dostosowują się do różnych rozmiarów ekranów i urządzeń. Dowiesz się, jak pisać elastyczne style, które zapewniają dobrą widoczność na wszystkich urządzeniach.',
           goal: 'Zrozumiesz, jak tworzyć responsywne style przy użyciu media queries i jak dostosować wygląd strony do różnych urządzeń.',
           examples: [
@@ -174,6 +182,7 @@ export const courses: Course[] = [
         {
           id: 1,
           title: 'Wprowadzenie do JavaScript',
+          language: 'JavaScript',
           content: 'JavaScript to język programowania, który pozwala na tworzenie dynamicznych i interaktywnych elementów na stronach internetowych. Poznasz podstawowe składniki języka, takie jak zmienne, typy danych oraz operatory.',
           goal: 'Zrozumiesz podstawowe składniki języka JavaScript oraz jak używać ich do budowania prostych skryptów.',
           examples: [
@@ -192,6 +201,7 @@ export const courses: Course[] = [
         {
           id: 2,
           title: 'Zmienne i Typy Danych',
+          language: 'JavaScript',
           content: 'Nauczysz się, jak używać zmiennych w JavaScript do przechowywania danych oraz jak obsługiwać różne typy danych, takie jak liczby, łańcuchy tekstowe, tablice i obiekty.',
           goal: 'Zrozumiesz, jak deklarować zmienne oraz jak pracować z różnymi typami danych w JavaScript.',
           examples: [
@@ -209,6 +219,7 @@ export const courses: Course[] = [
         {
           id: 3,
           title: 'Funkcje i Zakres',
+          language: 'JavaScript',
           content: 'Dowiesz się, jak tworzyć i używać funkcji w JavaScript, a także jak działają różne zakresy zmiennych. Poznasz pojęcia takie jak zakres lokalny i globalny oraz funkcje anonimowe.',
           goal: 'Zrozumiesz, jak definiować funkcje oraz jak zakres zmiennych wpływa na ich działanie.',
           examples: [
@@ -227,6 +238,7 @@ export const courses: Course[] = [
         {
           id: 4,
           title: 'Manipulacja DOM',
+          language: 'JavaScript',
           content: 'Poznasz podstawowe techniki manipulacji DOM (Document Object Model) w JavaScript. Nauczysz się, jak wybierać elementy na stronie, zmieniać ich zawartość i style oraz dodawać nowe elementy.',
           goal: 'Zrozumiesz, jak manipulować DOM w JavaScript, aby dynamicznie zmieniać zawartość i wygląd strony.',
           examples: [
@@ -254,6 +266,7 @@ export const courses: Course[] = [
         {
           id: 1,
           title: 'Wprowadzenie do React',
+          language: 'JavaScript',
           content: 'React to biblioteka JavaScript, która umożliwia budowanie dynamicznych i interaktywnych interfejsów użytkownika. Poznasz podstawowe pojęcia takie jak komponenty, propsy i stan.',
           goal: 'Zrozumiesz podstawowe pojęcia Reacta oraz jak używać komponentów do budowy UI.',
           examples: [
@@ -271,6 +284,7 @@ export const courses: Course[] = [
         {
           id: 2,
           title: 'Komponenty w React',
+          language: 'JavaScript',
           content: 'Dowiesz się, jak tworzyć komponenty w React i jak je wykorzystywać do budowania aplikacji. Nauczysz się o różnicy między komponentami klasowymi a funkcyjnymi oraz o używaniu hooków.',
           goal: 'Zrozumiesz, jak tworzyć komponenty klasowe i funkcyjne, oraz jak używać hooków do zarządzania stanem.',
           examples: [
@@ -289,6 +303,7 @@ export const courses: Course[] = [
         {
           id: 3,
           title: 'Zarządzanie Stanem w React',
+          language: 'JavaScript',
           content: 'Nauczysz się, jak zarządzać stanem aplikacji w React. Dowiesz się, jak używać hooka useState oraz kontekstu do przechowywania i zarządzania danymi w aplikacji.',
           goal: 'Zrozumiesz, jak zarządzać stanem w React oraz jak używać useState i Context API.',
           examples: [
@@ -306,6 +321,7 @@ export const courses: Course[] = [
         {
           id: 4,
           title: 'Routing w React',
+          language: 'JavaScript',
           content: 'Poznasz techniki routingu w React, które pozwalają na tworzenie aplikacji z wieloma stronami. Nauczysz się, jak używać biblioteki React Router do definiowania tras i przełączania się między nimi.',
           goal: 'Zrozumiesz, jak implementować routing w aplikacji React oraz jak używać React Router do zarządzania trasami.',
           examples: [
@@ -332,6 +348,7 @@ export const courses: Course[] = [
         {
           id: 1,
           title: 'Wprowadzenie do Next.js',
+          language: 'JavaScript',
           content: 'Next.js to framework oparty na React, który oferuje funkcje takie jak renderowanie po stronie serwera i generowanie stron statycznych. Poznasz podstawowe cechy Next.js oraz jak rozpocząć pracę z tym frameworkiem.',
           goal: 'Zrozumiesz podstawowe funkcje Next.js oraz jak skonfigurować i uruchomić projekt Next.js.',
           examples: [
@@ -350,6 +367,7 @@ export const courses: Course[] = [
         {
           id: 2,
           title: 'Routing w Next.js',
+          language: 'JavaScript',
           content: 'Dowiesz się, jak działa routing w Next.js. Poznasz sposób, w jaki Next.js obsługuje routing oparty na plikach oraz jak dynamicznie generować trasy.',
           goal: 'Zrozumiesz, jak korzystać z systemu routingu w Next.js do tworzenia dynamicznych stron.',
           examples: [
@@ -368,6 +386,7 @@ export const courses: Course[] = [
         {
           id: 3,
           title: 'Rendering po stronie serwera (SSR)',
+          language: 'JavaScript',
           content: 'Nauczysz się, jak Next.js obsługuje renderowanie po stronie serwera. Dowiesz się, jak korzystać z funkcji getServerSideProps do pobierania danych na serwerze przed renderowaniem strony.',
           goal: 'Zrozumiesz, jak wykorzystać SSR w Next.js do renderowania stron z danymi pobranymi na serwerze.',
           examples: [
@@ -385,6 +404,7 @@ export const courses: Course[] = [
         {
           id: 4,
           title: 'Generowanie stron statycznych (SSG)',
+          language: 'JavaScript',
           content: 'Dowiesz się, jak Next.js generuje strony statyczne podczas budowy aplikacji. Poznasz funkcję getStaticProps i jak używać jej do generowania stron na podstawie danych podczas budowania aplikacji.',
           goal: 'Zrozumiesz, jak używać SSG w Next.js do generowania stron statycznych, które są pre-renderowane podczas budowy aplikacji.',
           examples: [
@@ -416,3 +436,4 @@ export async function getLessonById(courseId: number, lessonId: number): Promise
     }
     return null;
   }
+
